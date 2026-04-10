@@ -15,4 +15,21 @@ Program-opening-Jarvis-style/
     ├── test_launcher.py
     └── test_audio_player.py
 
+Quick start:
+1) Run ./setup_venv.sh
+2) Activate the environment:
+    source .venv/bin/activate
+3) Start the app:
+    python main.py
+
+Notes:
+- Speech capture uses `sounddevice` and `SpeechRecognition`; `PyAudio` is no longer required.
+- If you want the current shell activated automatically, run:
+    source ./setup_venv.sh
+
+Linux note (PortAudio runtime):
+If setup or startup fails with "PortAudio library not found", install:
+
+sudo apt update
+sudo apt install -y libportaudio2
 

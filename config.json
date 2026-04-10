@@ -1,9 +1,13 @@
 {
   "microphone_device_index": null,
-  "clap_threshold_db": -20.0,
+  "clap_threshold_db": -26.0,
   "speech_timeout_s": 5.0,
   "wake_phrase": "wake up daddy's home",
-  "response_audio_path": "./assets/jarvis_response.wav",
+  "wake_phrase_aliases": [
+    "wake up"
+  ],
+  "response_audio_path": "./src/audio/Agent-Response.wav",
+  "response_lead_in_s": 2.0,
   "programs": [
     {
       "name": "VS Code",
